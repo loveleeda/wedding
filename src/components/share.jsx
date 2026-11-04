@@ -119,9 +119,9 @@ const Share = () => {
   const addToGoogleCalendar = () => {
     const eventDetails = {
       text: `${GROOM_NAME}❤${BRIDE_NAME} 결혼식`,
-      dates: '20260302T173000/20260302T193000', // March 2, 2026, 5:30 PM - 7:30 PM (2 hours)
-      details: `${GROOM_NAME}❤${BRIDE_NAME}의 결혼식에 초대합니다.\n\n청첩장 링크: https://samny95.github.io/wedding/`,
-      location: '서울 강남구 논현로 645 호텔 엘리에나 5층 그랜드볼룸',
+      dates: 'YYYYMMDDTHHMMSS/YYYYMMDDTHHMMSS', // Replace with the wedding start/end date and time
+      details: `${GROOM_NAME}❤${BRIDE_NAME}의 결혼식에 초대합니다.\n\n청첩장 링크: 청첩장 URL을 입력해 주세요`,
+      location: '예식장 주소를 입력해 주세요',
     };
 
     const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
@@ -139,11 +139,11 @@ const Share = () => {
 VERSION:2.0
 PRODID:-//Wedding Invitation//EN
 BEGIN:VEVENT
-DTSTART:20260302T173000
-DTEND:20260302T193000
+DTSTART:YYYYMMDDTHHMMSS
+DTEND:YYYYMMDDTHHMMSS
 SUMMARY:${GROOM_NAME}❤${BRIDE_NAME} 결혼식
 DESCRIPTION:${GROOM_NAME}❤${BRIDE_NAME}의 결혼식에 초대합니다.\\n\\n청첩장 링크: https://samny95.github.io/wedding/
-LOCATION:서울 강남구 논현로 645 호텔 엘리에나 5층 그랜드볼룸
+LOCATION:예식장 주소를 입력해 주세요
 STATUS:CONFIRMED
 SEQUENCE:0
 BEGIN:VALARM
