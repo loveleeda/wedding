@@ -122,8 +122,8 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1765440937193",
-    "key" : "dp5eokzbpfn",
+    "timestamp" : "YOUR_KAKAO_MAP_TIMESTAMP",
+    "key" : "YOUR_KAKAO_MAP_KEY",
     "mapWidth" : "640",
     "mapHeight" : "360"
   }).render();`);
@@ -208,33 +208,33 @@ const Location = () => {
         </Modal>
       )}
       <Content>
-        서울 강남구 논현로 645
+        예식장 주소를 입력해 주세요
         <br />
-        호텔 엘리에나 5층 그랜드볼룸
+        예식장 이름과 층수, 홀 이름을 입력해 주세요
         <br />
         <br />
         <Title>자차 이용시</Title>
         <br />
         <br />
-        자차 이용시 호텔 정문에서 주차요원의 안내를 받으실 수 있으며
+        자가용 이용 안내를 입력해 주세요.
         <br />
-        2시간 무료 주차가 가능합니다.
+        주차 안내를 입력해 주세요.
         <br />
         <br />
         <Title>버스 이용시</Title>
         <br />
         <br />
-        147, 241, 463, 3412, 4211 논현동고개(23-119) 하차 후 학동역 방면 도보 130m
+        버스 노선과 정류장, 도보 안내를 입력해 주세요.
         <br />
-        147, 463, 4211 논현고개(23-146) 하차 후 맞은편 도보 140m
+        추가 버스 안내가 있다면 입력해 주세요.
         <br />
         <br />
         <Title>지하철 이용시</Title>
         <br />
         <br />
-        7호선 학동역(4번 출구) 하차 (도보 4분)
+        지하철 노선, 역, 출구 및 도보 시간을 입력해 주세요.
         <br />
-        9호선 언주역(2번 출구) 하차 (도보 6분)
+        추가 지하철 안내가 있다면 입력해 주세요.
       </Content>
     </Wrapper>
   );
