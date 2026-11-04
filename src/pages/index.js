@@ -24,7 +24,7 @@ import "aos/dist/aos.css";
 const { Footer } = Layout;
 
 const Wrapper = styled.div`
-  background: #efebe9;
+  background: #f8f5ef;
   background-image: url(${GroovePaper});
   width: 100%;
 `;
@@ -82,8 +82,8 @@ const RSVPFloatingButton = styled.button`
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: rgba(124, 136, 255, 0.9);
-  border: 2px solid #6b7aff;
+  background: rgba(180, 154, 128, 0.95);
+  border: 2px solid #a88d72;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   display: flex;
@@ -93,7 +93,7 @@ const RSVPFloatingButton = styled.button`
   z-index: 1000;
   
   &:hover {
-    background: rgba(107, 122, 255, 1);
+    background: rgba(160, 132, 104, 1);
     transform: scale(1.1);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   }
@@ -126,11 +126,11 @@ const NotificationBanner = styled.div`
   bottom: ${props => props.show ? '20px' : '-200px'};
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, #7c88ff 0%, #6b7aff 100%);
+  background: linear-gradient(135deg, #b49a80 0%, #94785e 100%);
   color: white;
   padding: 16px 24px;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(124, 136, 255, 0.4);
+  box-shadow: 0 8px 24px rgba(148, 120, 94, 0.28);
   z-index: 2000;
   transition: bottom 0.5s ease;
   display: flex;
@@ -303,12 +303,12 @@ const IndexPage = () => {
   return (
     <Wrapper>
       <Helmet>
-        <title>손샘❤이나영 결혼식에 초대합니다</title>
-        <meta name="description" content="2026년 3월 2일, 월요일 17시 30분 | 엘리에나 호텔, 5층 그랜드볼룸" />
-        <meta property="og:title" content="손샘❤이나영 결혼식에 초대합니다" />
+        <title>우리의 결혼식에 초대합니다</title>
+        <meta name="description" content="소중한 날, 함께해 주세요." />
+        <meta property="og:title" content="우리의 결혼식에 초대합니다" />
         <meta property="og:description" content="2026년 3월 2일, 월요일 17시 30분 | 엘리에나 호텔, 5층 그랜드볼룸" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://samny95.github.io/wedding/" />
+        <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/wedding/" />
         {/* <meta property="og:image" content="https://samny95.github.io/wedding/og-image.jpg" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="1200" /> */}
@@ -361,7 +361,7 @@ const IndexPage = () => {
       <Share />
       <Footer
         style={{
-          background: "#D7CCC8",
+          background: "#e8dfd3",
           backgroundImage: `url(${GroovePaper})`,
           opacity: 0.6,
           textAlign: "center",
