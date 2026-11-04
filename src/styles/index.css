@@ -49,3 +49,31 @@ body {
   font-style: normal;
   font-display: swap;
 }
+
+
+/* Warm ivory / beige component theme */
+.ant-divider-horizontal.ant-divider-with-text::before,
+.ant-divider-horizontal.ant-divider-with-text::after {
+  border-top-color: var(--line-color);
+}
+.ant-btn-primary,
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+.ant-radio-button-wrapper:hover,
+.ant-btn:hover,
+.ant-btn:focus {
+  color: var(--title-color);
+  border-color: var(--accent-color);
+}
+.ant-modal-header,
+.ant-modal-content {
+  background: var(--paper-background);
+}
+a {
+  color: var(--title-color);
+}
+@media (max-width: 768px) {
+  body { overflow-x: hidden; }
+}
