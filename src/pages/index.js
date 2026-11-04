@@ -306,10 +306,10 @@ const IndexPage = () => {
         <title>우리의 결혼식에 초대합니다</title>
         <meta name="description" content="소중한 날, 함께해 주세요." />
         <meta property="og:title" content="우리의 결혼식에 초대합니다" />
-        <meta property="og:description" content="2026년 3월 2일, 월요일 17시 30분 | 엘리에나 호텔, 5층 그랜드볼룸" />
+        <meta property="og:description" content="소중한 날, 함께해 주세요." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/wedding/" />
-        {/* <meta property="og:image" content="https://samny95.github.io/wedding/og-image.jpg" />
+        {/* <meta property="og:image" content="https://YOUR_GITHUB_USERNAME.github.io/wedding/og-image.jpg" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="1200" /> */}
       </Helmet>
