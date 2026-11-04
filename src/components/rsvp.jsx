@@ -38,13 +38,13 @@ const RSVPButton = styled(Button)`
   height: 56px;
   font-size: 1rem;
   font-weight: 500;
-  background: #7c88ff;
+  background: #a88d72;
   border: none;
   color: white;
   border-radius: 4px;
   
   &:hover, &:focus {
-    background: #6b7aff;
+    background: #94785e;
     color: white;
   }
 `;
@@ -248,7 +248,7 @@ const RSVP = forwardRef((props, ref) => {
 
     try {
       // TODO: Replace with your Google Apps Script Web App URL
-      const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxLkd_08FMnkuu4BHRGuj-zDBoxDfm3bZZUKcecMj2mfYU4oriK4py4J2pwZZtpNSvw/exec";
+      const WEBHOOK_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL";
       
       const sideMapping = {
         "groom": "신랑",
