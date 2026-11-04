@@ -1,13 +1,25 @@
 :root {
-  --title-color: #d97d83;
+  --title-color: #9a8068;
+  --accent-color: #b49a80;
+  --page-background: #f8f5ef;
+  --paper-background: #fffdf9;
+  --text-color: #5e554b;
+  --line-color: #e8dfd3;
 }
+
+html,
+body {
+  background: var(--page-background);
+  color: var(--text-color);
+}
+
 * {
   font-family: "Noto Serif KR", serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-/* 카카오맵 버튼 없애기 */
+/* Kakao map controls */
 .wrap_controllers {
   display: none !important;
 }
@@ -24,42 +36,11 @@
 }
 
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  /* Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-/* 폰트 적용 */
+/* Local decorative font */
 @font-face {
   font-family: "mom_to_daughter";
   src: url("/wedding/mom_to_daughter.woff2") format("woff2"),
