@@ -1,24 +1,12 @@
 module.exports = {
-  pathPrefix: "/wedding",  // <- repo name
+  pathPrefix: "/wedding",
   siteMetadata: {
-    title: `손샘❤이나영 결혼식에 초대합니다`,
-    description: `2026년 3월 2일, 월요일 17시 30분 | 엘리에나 호텔, 5층 그랜드볼룸`,
-    siteUrl: `https://samny95.github.io`,
+    title: `우리의 결혼식에 초대합니다`,
+    description: `소중한 날, 함께해 주세요.`,
+    siteUrl: `https://YOUR_GITHUB_USERNAME.github.io`,
     image: `/og-image.jpg`
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          "G-Y11DT5E9L4",
-        ],
-        pluginConfig: {
-          head: true,
-          respectDNT: true,
-        },
-      },
-    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
@@ -34,22 +22,14 @@ module.exports = {
         },
       },
     },
+    { resolve: `gatsby-transformer-sharp` },
     {
-      resolve: `gatsby-transformer-sharp`,
+      resolve: `gatsby-source-filesystem`,
+      options: { name: `images`, path: `${__dirname}/src/images` },
     },
     {
       resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `assets`,
-        path: `${__dirname}/src/assets`,
-      },
+      options: { name: `assets`, path: `${__dirname}/src/assets` },
     },
   ]
 };
